@@ -1,130 +1,123 @@
 /*global styles*/
 
 * {
--webkit-font-smoothing:antialiased;
--moz-font-smoothing:antialiased;
-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 }
 
 body {
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-font-weight: 300;
-color:#2a2a2a;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	color: #2a2a2a;
 }
 
 img {
-max-width: 100%;	
+	max-width: 100%;
 }
 
-#container {
-max-width: 1280px;
-margin:0 auto;
-background: #ffd200;
-height: 400px;	
+header {
+	max-width: 1280px;
+	margin: 0 auto;
+	background: #ffd200;
+	height: 400px;
 }
 
 h2 {
 color: #2a2a2a;
-margin:0;	
+margin: 0;
 }
 
 a {
 text-decoration: none;
-color:#48036f;
+color: #48036f;
 }
 
 a:hover {
-text-decoration: underline;	
+	text-decoration: underline;
 }
 
 hr {
-border-color:#e7e7e4;	
+	border: none;
+	border-top: 1px solid #e7e7e4;
 }
 
+ul {
+	margin:0;
+	padding:0;
+}
 
 /*end global styles*/
 
 
 .nameplate {
-float: left;
-width: 385px;
-margin:0 0 0 .8em;	
+	float: left;
+	width: 385px;
+	margin: 0 0 0 .8em;
 }
 
 	.nameplate h1 {
 		font-size: 7em;
-		margin:0 0 .2em 0;
+		margin: 0 0 .2em 0;
 		line-height: 1;
 	}
 
 	.nameplate h3 {
-		margin:0 0 0 10px;
-		padding:5px 5px 5px 10px;
+		margin: 0 0 0 10px;
+		padding: 5px 5px 5px 10px;
 		font-family: "ff-typestar-black-web";
 		background: #2a2a2a;
 		color: white;
 		width: 55%;
 	}
 
-.icons {
-width: 600px;
-float: left;
-padding-top: 64px;
-padding-left: 120px;	
+nav {
+	width: 600px;
+	float: left;
+	padding-top: 64px;
+	padding-left: 120px;
 }
 
-ul {
-margin:0;
-padding:0;
+nav li p {
+	position: absolute;
+	font-family: "ff-typestar-black-web";
+	font-weight: 900;
+	left: 20%;
+	width: 120px;
+	font-size: 20px;
+	margin-left:-18px;
 }
 
-.icons li p {
-position: absolute;	
-font-family: "ff-typestar-black-web";
-font-weight: 900;
-left:20%;
-width: 120px;
-font-size: 20px;	
-margin-left:-18px;	
-}
+nav li p:nth-child(3) {
+	margin-left:-18px;
 }
 
-.icons li p:nth-child(3) {
-margin-left:-18px;	
+nav li {
+	position: relative;
+	display: inline;
+	margin:21px;
 }
 
-.icons li {
-position: relative;
-display: inline;
-margin:21px;
-}
-
-.icons li:nth-child(3) {
-left:40px;	
+nav li:nth-child(3) {
+	left:40px;
 }
 
 
 img.pulse {
--webkit-transition:.5s ease;
-	-moz-transition:.5s ease;
-	-ms-transition:.5s ease;
-	-o-transition:.5s ease;
-	transition:.5s ease;	
+	-webkit-transition:.5s ease;
+	transition:.5s ease;
 }
 
 img.pulse:hover {
--webkit-transform:scale(1.1);
-	-moz-transform:scale(1.1);
-	-ms-transform:scale(1.1);
-	-o-transform:scale(1.1);
-	transform:scale(1.1);	
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
 }
 
 /*blocks*/
 
 section {
 font-family: "ff-typestar-black-web";
-width: 1124px;	
+width: 1124px;
 }
 
 .block-even {
@@ -139,19 +132,18 @@ padding-bottom: 2.4em;
 height: 300px;
 }
 
-
 .block-lft {
 width: 350px;
 float:left;
 margin:0;
-padding:2.4em 0 0 3.2em;	
+padding:2.4em 0 0 3.2em;
 }
 
 .block-rght {
 width: 350px;
 float:right;
 margin:0;
-padding:1.6em 3.2em 0 0;	
+padding:1.6em 3.2em 0 0;
 }
 
 img.screenshot-lft {
@@ -169,12 +161,12 @@ width: 35%;
 footer {
 background:#ffd200;
 margin:0;
-position: relative;	
+position: relative;
 }
 
 .footer-container {
 width: 1000px;
-margin:0 auto;	
+margin:0 auto;
 background:#ffd200;
 height: 500px;
 }
@@ -183,15 +175,17 @@ footer h2 {
 float: right;
 width: 600px;
 font-size:50px;
-padding-top: 140px;	
+padding-top: 140px;
 }
 
 footer li a {
-color: black;	
+color: black;
+-webkit-transition: all .25s ease;
+transition: all .25s ease;
 }
 
 footer li a:hover {
-color: #fafafa;	
+color: #fafafa;
 }
 
 footer p {
@@ -202,7 +196,7 @@ font-family: "ff-typestar-black-web";
 
 footer img {
 padding:11px 0 0 26px;
-float: left;	
+float: left;
 }
 
 .links {
@@ -213,13 +207,11 @@ left:38.5%;
 
 ul {
 margin:0;
-padding:0;	
+padding:0;
 }
 
 .links li {
 display: inline;
 list-style-type: none;
-margin-left:50px;	
+margin-left:50px;
 }
-
-
