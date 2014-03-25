@@ -14,7 +14,7 @@ body {
 }
 
 img {
-	max-width: 100%;	
+	max-width: 100%;
 }
 
 p {
@@ -25,13 +25,12 @@ p {
 
 ul {
 	margin:0;
-	padding:0;	
+	padding:0;
 }
 
 #container {
 	max-width: 100%;
 	margin:0 auto;
-	background: #2a2a2a;
 }
 
 section {
@@ -40,7 +39,7 @@ section {
 
 h2 {
 	color: #2a2a2a;
-	margin:0;	
+	margin:0;
 }
 
 a {
@@ -49,13 +48,13 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 
 hr {
 	border-top:1px solid #e7e7e4;
 	margin:0;
-	padding:0;	
+	padding:0;
 }
 
 /*end global styles*/
@@ -66,7 +65,7 @@ hr {
 	right:0;
 	background:rgba(0,0,0,.5);
 	padding:0 0 .8em .8em;
-	z-index: 1;		
+	z-index: 1;
 }
 
 .hireme p {
@@ -84,11 +83,11 @@ hr {
 .hireme a:hover {
 	background:#fafafa;
 	text-decoration: none;
-	transition:1s all;	
+	transition:1s all;
 }
 
 .hireme a:nth-child(3) {
-	border-left: 1.5px solid #2a2a2a;	
+	border-left: 1.5px solid #2a2a2a;
 	padding-left:5px;
 }
 
@@ -96,7 +95,11 @@ hr {
 }
 
 .nameplate {
-	margin:0 auto;
+	margin: 0 auto;
+}
+
+.nameplate img {
+	width: 100%;
 }
 
 .nameplate h2, .nameplate h3 {
@@ -124,12 +127,13 @@ hr {
  }
 
 .contact-list {
-	width: 1124px;
+	/*width: 1124px;*/
 	height: 40px;
+	background: #222;
 }
 
 .contact-list ul {
-	margin:0 auto; /*why does this do nothing*/	
+	margin:0 auto; /*why does this do nothing*/
 }
 
 .contact-list li {
@@ -140,59 +144,54 @@ hr {
 }
 
 .contact-list li:hover {
-	background: #e1e1e1;	
+	background: #e1e1e1;
 }
 
 /*blocks*/
 
 .lower {
-	height: auto;
-	width: 1124px;
+	max-width: 1124px;
 	margin: 0 auto;
-	height: 400px;
 }
 
-
-.block-even {
-	margin:0 auto;
-	padding-bottom: 8.6em;
-	height: 300px;
+.lower section {
+	margin: 0 auto;
+	padding-bottom: 1em;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
 }
 
-.block-odd {
-	margin:0 auto;
-	padding-bottom: 8.6em;
-	height: 300px;
+.lower section:last-child {
+	border: none;
 }
 
-.block-even:hover, .block-odd:hover {
-		
+.lower section div {
+	width: 30%;
+	padding: 5%;
+	transition: all .25s ease;
 }
 
-.block-lft {
-	width: 350px;
-	float:left;
-	margin:0;
-	padding:3.2em;	
+.lower section img {
+	width: 50%;
+	padding: 5%;
 }
 
-.block-rght {
-	width: 350px;
-	float:right;
-	margin:0;
-	padding:2.4em 3.2em 0 0;	
-}
+.lower section:nth-child(odd) div { float: left }
+.lower section:nth-child(even) div { float: right }
 
-img.screenshot-lft {
-	float:right;
-	width: 35%;
-	padding: 0.8em 1.6em;
-}
+.lower section:nth-child(odd) img { float: right }
+.lower section:nth-child(even) img { float: left }
 
-img.screenshot-rght {
-	float:left;
-	width: 35%;
-	padding: 0.8em 1.6em;
+/* responsiveness */
+
+@media only screen and (max-width: 650px) {
+	.lower section div { width: 100% }
+	.lower section:nth-child(odd) div { float: none }
+	.lower section:nth-child(even) div { float: none }
+
+	.lower section img { width: 100% }
+	.lower section:nth-child(odd) img { float: none }
+	.lower section:nth-child(even) img { float: none }
 }
 
 /*footer*/
@@ -201,11 +200,11 @@ footer {
 	margin:0 auto;
 	position: relative;
 	clear: both;
-	height: 400px;	
+	height: 400px;
 }
 
 .footer-container {
-	margin:0 auto;	
+	margin:0 auto;
 	background:#ffd200;
 	height: 500px;
 	padding:0 3.2em;
@@ -221,7 +220,7 @@ footer h2 {
 }
 
 footer li a {
-	color: black;	
+	color: black;
 }
 
 footer li a:hover {
@@ -231,7 +230,7 @@ footer li a:hover {
 	-ms-transition: all .1s;
 	-o-transition: all .1s;
 	transition: all .1s;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 footer p {
@@ -244,7 +243,7 @@ footer p {
 
 footer img {
 	padding:11px 0 0 26px;
-	float: left;	
+	float: left;
 }
 
 .links {
@@ -256,7 +255,7 @@ footer img {
 .links li {
 	display: inline;
 	list-style-type: none;
-	margin-left:50px;	
+	margin-left:50px;
 }
 
 
