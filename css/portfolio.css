@@ -10,7 +10,7 @@ body {
 	font-family: "proxima-nova";
 	color:#2a2a2a;
 	height: auto;
-	background: url('../img/pattern-37g8.png');
+	background: #fafafa;
 }
 
 img {
@@ -18,10 +18,15 @@ img {
 }
 
 p {
-	font-family: "proxima-nova";
+
+}
+
+.lower p {
 	font-size: 15px;
 	font-style: normal;
-}
+	font-family: "proxima-nova";
+	color: #4c4c4c;
+ }
 
 ul {
 	margin:0;
@@ -42,6 +47,18 @@ h2 {
 	margin:0;
 }
 
+h5 {
+	text-align: center;
+	background: #2a2a2a;
+	color:#fafafa;
+	margin:0;
+	padding:2%;	
+}
+
+h5 a {
+	color:white;
+}
+
 a {
 	text-decoration: none;
 	color:#5f0303;
@@ -59,39 +76,8 @@ hr {
 
 /*end global styles*/
 
-.hireme {
-	position: fixed;
-	top:0;
-	right:0;
-	background:rgba(0,0,0,.5);
-	padding:0 0 .8em .8em;
-	z-index: 1;
-}
-
-.hireme p {
-	color:white;
-	width: 200px;
-	font-family: "ff-typestar-black-web";
-	font-weight: 900;
-}
-
-.hireme a {
-	color: #5f0303;
-	margin:0;
-}
-
-.hireme a:hover {
-	background:#fafafa;
-	text-decoration: none;
-	transition:1s all;
-}
-
-.hireme a:nth-child(3) {
-	border-left: 1.5px solid #2a2a2a;
-	padding-left:5px;
-}
-
 .upper {
+	background: #222;
 }
 
 .nameplate {
@@ -127,24 +113,29 @@ hr {
  }
 
 .contact-list {
-	/*width: 1124px;*/
-	height: 40px;
+	height: 100%;
 	background: #222;
-}
-
-.contact-list ul {
-	margin:0 auto; /*why does this do nothing*/
+	z-index: 1;
+	width: 100px;
+	position: fixed;
+	border-right:1px solid #ffd200;
 }
 
 .contact-list li {
-	float: left;
 	list-style-type: none;
 	padding:10px;
-	color: #fafafa;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 .contact-list li:hover {
-	background: #e1e1e1;
+	background: #ffd200;
+	transition:.5s all;
+}
+
+.contact-list a {
+	color:#fafafa;
+	text-decoration: none;	
 }
 
 /*blocks*/
@@ -152,6 +143,7 @@ hr {
 .lower {
 	max-width: 1124px;
 	margin: 0 auto;
+
 }
 
 .lower section {
@@ -159,6 +151,13 @@ hr {
 	padding-bottom: 1em;
 	overflow: hidden;
 	border-bottom: 1px solid #ccc;
+	opacity: .8;
+	transition: all .5s;
+}
+
+.lower section:hover {
+	opacity: 1;
+	transition: all .5s;	
 }
 
 .lower section:last-child {
@@ -198,25 +197,8 @@ hr {
 
 footer {
 	margin:0 auto;
-	position: relative;
 	clear: both;
 	height: 400px;
-}
-
-.footer-container {
-	margin:0 auto;
-	background:#ffd200;
-	height: 500px;
-	padding:0 3.2em;
-}
-
-footer h2 {
-	float: right;
-	width: 600px;
-	font-size:50px;
-	padding:1.6em 0 .2em 0;
-	font-family: "ff-typestar-black-web";
-	text-transform: uppercase;
 }
 
 footer li a {
@@ -233,29 +215,89 @@ footer li a:hover {
 	text-decoration: none;
 }
 
-footer p {
+footer img {
+	padding:11px 0 0 26px;
 	float: right;
-	width: 600px;
+}
+
+
+.about {
+	margin:0 auto;
+	background:#ffd200;
+	height: 500px;
+	padding:0 7.2em;
+	float: left;
+}
+
+.about h2 {
+	float: left;
+	width: 30%;
+	font-size:50px;
+	padding:1.6em 0 .2em 0;
 	font-family: "ff-typestar-black-web";
+	text-transform: uppercase;
+}
+
+
+.about p {
+	float: left;
+	width: 600px;
+	font-family: "proxima-nova";
 	margin:.8em 0 .8em 0;
 	line-height: 1.5em;
 }
 
-footer img {
-	padding:11px 0 0 26px;
+.contact {
+	margin:0 auto;
+	height: 300px;
+	padding:0 7.2em;
+	position: relative;
+	max-width: 1124px;
 	float: left;
+	
+}
+
+.contact a {
+	color:#222;	
+}
+
+.contact h2 {
+	font-size:50px;
+	padding:1.6em 0 .2em 0;
+	font-family: "ff-typestar-black-web";
+	text-transform: uppercase;	
+	float: left;
+	margin:0;
+}
+
+.contact p {
+	text-align: left;
+	margin:0 0 0 5px;
+
 }
 
 .links {
-	position: absolute;
-	top:101%;
-	left:37.5%;
+	float: left;
+	max-width: 1124px;
+	margin-top: 140px;	
 }
+
 
 .links li {
 	display: inline;
 	list-style-type: none;
-	margin-left:50px;
+	margin-left:100px;
 }
+
+.links a {
+	color:#222;
+	text-decoration: none;	
+}
+
+.links a:hover {
+	color:#ffd200;	
+}
+
+
 
 

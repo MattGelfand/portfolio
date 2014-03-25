@@ -14,36 +14,40 @@
 
 <body>
 	<div id="container">
-		<section class="upper">
+		<section class="upper" id="home">
 			<div class="contact-list">
 				<ul>
-					<li>Recent work</li>
-					<li>Bio</li>
-					<li>Contact</li>
-					<li>Resume</li>
+					<li><a href="#home" class="smoothScroll">Home</li>
+					<li><a href="#code" class="smoothScroll">Recent work</a></li>
+					<li><a href="#fun" class="smoothScroll">Fun Stuff</a></li>
+					<li><a href="#words" class="smoothScroll">Words</a></li>
+					<li><a href="#bio" class="smoothScroll">Bio</li>
+					<li><a href="#contact_me" class="smoothScroll">Contact</a></li>
 				</ul>
 			</div>
 
 			<div class="nameplate">
-				<img src="img/deskwork.jpg" />
+				<img src="img/bw.jpg" />
 				<h2>matt gelfand</h2>
 				<h3>designer/storyteller</h3>
-			</div>
-
-			<div class="hireme">
-				<p>hire me!</p>
-				<a href="img/rez.pdf" target="_blank">resume</a>
-				<a href="mailto:matthew.gelfand@gmail.com">email</a>
 			</div>
 		</section><!--end upper-->
 
 		<section class="lower">
 			<section id="code">
 				<div>
-					<h2>Jay Cutler Screen Crack</h2>
-					<p>An experimentation with CSS3 animation that speaks to Jay Cutler's arm strength. Hover over the football for the effect. And wherever your volume is right now, cut it in half.</p>
+					<h2>Backstory</h2>
+					<p>Backstory is an app that allows users to view a succinct timeline of a news story's events in a single view. Created by myself and three others over 36 hours at a Society for News Design hackathon. It's cross-device compatible, and could be especially useful if you find yourself in a "Castaway"-type <a href="https://www.youtube.com/watch?v=3MAVcP9bjOo">situation.</a> More info about the process <a href="http://bit.ly/1jwqf9v">here.</a>
 				</div>
-				<a href="http://gelf.me/techniques/alvarez/footballguy.html"><img src="img/screenshot1.png" /></a>
+				<a href="http://mswartz.github.io/backstory/"><img src="img/magnacarta.png" /></a>
+			</section>
+
+			<section>
+				<div>
+					<h2>North by Northwestern Redesign <em>(in-progress, exp. completion 4/1)</em></h2>
+					<p>A three-month project redesigning the website of Northwestern's magazine, <a href="http://www.northbynorthwestern.com/">North By Northwestern.</a> Extensive iterating and wireframing in InDesign/Photoshop/pen & paper for all device sizes, considerable typography research and hand-coding each page from scratch. A true learning experience. Links to in-progress <a href="http://gelf.me/nbn/index.html">Home</a> and <a href="http://gelf.me/nbn/article.html"> Article</a> pages.</p>
+				</div>
+				<img src="img/screenshot4.png" />
 			</section>
 
 			<section>
@@ -54,6 +58,14 @@
 				<a href="http://theaskingprice.org/beer/"><img src="img/screenshot2.png" /></a>
 			</section>
 
+			<section id="fun">
+				<div>
+					<h2>Jay Cutler Screen Crack</h2>
+					<p>An experimentation with CSS3 animation that speaks to Jay Cutler's arm strength. Hover over the football for the effect. And wherever your volume is right now, cut it in half.</p>
+				</div>
+				<a href="http://gelf.me/techniques/alvarez/footballguy.html"><img src="img/screenshot1.png" /></a>
+			</section>
+
 			<section>
 				<div>
 					<h2>Cinemagraphs</h2>
@@ -62,75 +74,71 @@
 				<a href="http://gelf.me/innovation/cinemagraphs/cinemagraphs-home.html"><img src="img/screenshot3.png" /></a>
 			</section>
 
-			<section id="design">
-				<div>
-					<h2>North by Northwestern Redesign <em>(in-progress, exp. completion 4/1)</em></h2>
-					<p>A three-month project redesigning the website of Northwestern's magazine, <a href="http://www.northbynorthwestern.com/">North By Northwestern.</a> Extensive iterating and wireframing in InDesign/Photoshop/pen & paper for all device sizes, considerable typography research and hand-coding each page from scratch. A true learning experience. Links to in-progress <a href="http://gelf.me/nbn/index.html">Home</a> and <a href="http://gelf.me/nbn/article.html"> Article</a> pages.</p>
-				</div>
-				<img src="img/screenshot4.png" />
-			</section>
-
-			<section id="words">
-				<div>
-					<h2>Backstory</h2>
-					<p>"Backstory" is an app that allows users to view a succinct timeline of a story's events in a single view. Created by myself and three others in 36 hours at a Society for News Design hackathon. More info about the process <a href="http://bit.ly/1jwqf9v">here.</a>
-				</div>
-				<img src="img/magnacarta.png" />
-			</section>
-
 			<section id="words">
 				<div>
 					<h2>Journalism!</h2>
 					<p>My extensive writing background includes positions (at) and work (for) a variety of prominent sports and lifestyle publications and websites, including <a href="http://www.urbandaddy.com/">UrbanDaddy</a> (Boston & Chicago editions), <a href="http://www.improper.com/">The Improper Bostonian</a> and <a href="http://bleacherreport.com/users/203365-matt-gelfand">Bleacher Report</a>. I've been featured in <a href="http://usatoday30.usatoday.com/sports/baseball/fantasy/shandler/story/2012-06-05/unlucky-hitters-babip/55400264/1">USA Today,</a> Yahoo! Sports and CBS, and currently write weekly columns for <a href="https://www.baseballhq.com/tour/experts.shtml">BaseballHQ.com.</a> I did <a href="https://www.youtube.com/watch?v=wsXIfXtduSA#t=27">a bit of reporting</a> at Medill as well.</p>
 				</div>
-				<img src="img/writing.png" />
+				<img src="img/journ-group.png" />
 			</section>
 
 		</section><!--end lower-->
 	</div><!--end container-->
 
 	<footer>
-		<div class="footer-container">
+		<div class="about" id="bio">
 			<img src="img/trace.png" />
 			<h2>About</h2>
 			<p>A mentor once told that me in order to become skilled at anything, you have to try it, and you have to be bad at it. That was my barrier into design and development for years. Many sleepless nights and duct-tape websites later, I've developed a considerable skill-set in code to complement a strong background in journalism. I'm obsessive about typography, code semantically in both HTML5 and div-based layouts and am constantly experimenting with alternative page designs. I also prefer amber beers and am a fantasy sports junkie. Below you'll see I'm also on the social media, and have regularly updated Github and Dribbble accounts.</p>
 		</div>
-			<ul class="links">
+		
+		<div class="contact" id="contact_me">
+			<h2>Contact</h2>
+			<p><strong>Available for hire</strong></p>
+			<p><a href="mailto:matthew.gelfand@gmail.com">matthew.gelfand@gmail.com</a></p>
+			<p><a href="img/rezz.pdf">Resume</a></p>
+		</div>
+		
+		<div class="links">
+			 <ul>
 	 			<li>
 					<a href="https://www.facebook.com/matthew.gelfand">
-						<i class="fa fa-facebook fa-2x"></i>
+						<i class="fa fa-facebook fa-4x"></i>
 					</a>
 				</li>
 
 
 				<li>
 					<a href="https://twitter.com/mattgelfand">
-						<i class="fa fa-twitter fa-2x"></i>
+						<i class="fa fa-twitter fa-4x"></i>
 					</a>
 				</li>
 
 
 				<li>
 					<a href="http://www.linkedin.com/in/matthewrgelfand">
-						<i class="fa fa-linkedin fa-2x"></i>
+						<i class="fa fa-linkedin fa-4x"></i>
 					</a>
 				</li>
 
 
 				<li>
 					<a href="http://dribbble.com/mattgelfand">
-						<i class="fa fa-dribbble fa-2x"></i>
+						<i class="fa fa-dribbble fa-4x"></i>
 					</a>
 				</li>
 
 
 				<li>
 					<a href="https://github.com/MattGelfand">
-						<i class="fa fa-github fa-2x"></i>
+						<i class="fa fa-github fa-4x"></i>
 					</a>
 				</li>
-
 			</ul>
+		</div>
 	</footer>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+
 </body>
 </html>
